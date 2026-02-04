@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Video Statistics</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            background: linear-gradient(135deg, #2c2f33 0%, #1a1d21 100%);
+            color: #fff; 
+            padding: 20px;
+            min-height: 100vh;
+        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        h1 { 
+            text-align: center; 
+            margin-bottom: 30px; 
+            font-size: 2.5em;
+            background: linear-gradient(90deg, #5865F2, #7289DA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .stats-header {
+            background: #23272a;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .stats-header h2 { color: #5865F2; margin-bottom: 10px; }
+        .server { 
+            background: #23272a; 
+            margin: 15px 0; 
+            padding: 20px; 
+            border-radius: 12px; 
+            display: flex; 
+            align-items: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #5865F2;
+        }
+        .server:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(88, 101, 242, 0.3);
+        }
+        .server img { 
+            width: 64px; 
+            height: 64px; 
+            border-radius: 50%; 
+            margin-right: 20px;
+            border: 3px solid #5865F2;
+        }
+        .info { flex: 1; }
+        .info h3 { 
+            margin-bottom: 8px; 
+            font-size: 1.3em;
+            color: #fff;
+        }
+        .count { 
+            font-size: 1.8em; 
+            font-weight: bold; 
+            color: #5865F2;
+            margin-bottom: 5px;
+        }
+        .rank {
+            display: inline-block;
+            background: #5865F2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            margin-right: 15px;
+            min-width: 40px;
+            text-align: center;
+        }
+        small { color: #99aab5; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📊 Complete Server Statistics</h1>
+        <div class="stats-header">
+            <h2>Total: 1,215,259 videos</h2>
+            <p>Across 22 servers</p>
+        </div>
+
+        <div class="server">
+            <span class="rank">#1</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>cisci</h3>
+                <div class="count">999,999 videos</div>
+                <small>Last updated: 2026-02-04 15:24:09</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#2</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>sigma</h3>
+                <div class="count">99,999 videos</div>
+                <small>Last updated: 2026-02-04 15:22:27</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#3</span>
+            <img src="https://cdn.discordapp.com/icons/1415354348996792420/d1793cc6f97cc96a53e76aa3e40afbd4.png" alt="icon">
+            <div class="info">
+                <h3>FreakXWorld</h3>
+                <div class="count">23,432 videos</div>
+                <small>Last updated: 2026-02-04 13:50:12</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#4</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wkwk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:54:46</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#5</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wkw1k</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:54:51</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#6</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wkswk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:54:59</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#7</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>4wkwk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:55:03</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#8</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wk3wk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:55:07</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#9</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wk-wk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:55:12</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#10</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>wskwk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:55:16</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#11</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>w22skwk</h3>
+                <div class="count">9,090 videos</div>
+                <small>Last updated: 2026-02-04 13:58:56</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#12</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>sigmok</h3>
+                <div class="count">6,000 videos</div>
+                <small>Last updated: 2026-02-04 13:45:56</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#13</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>ajig loe</h3>
+                <div class="count">6,000 videos</div>
+                <small>Last updated: 2026-02-04 13:46:14</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#14</span>
+            <img src="https://cdn.discordapp.com/icons/1155217173753638922/a_e0f4a46fab2719d6d95b0547df1c0bd6.png" alt="icon">
+            <div class="info">
+                <h3>Hentailand</h3>
+                <div class="count">3,477 videos</div>
+                <small>Last updated: 2026-02-04 14:18:41</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#15</span>
+            <img src="https://cdn.discordapp.com/icons/1193823590932553738/6aad461c4ec779da4b96e7e0792b18da.png" alt="icon">
+            <div class="info">
+                <h3>RIF STORE</h3>
+                <div class="count">999 videos</div>
+                <small>Last updated: 2026-02-04 14:27:10</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#16</span>
+            <img src="https://cdn.discordapp.com/icons/1311388310702129203/37bca287280a1c854cba653b584dc97d.png" alt="icon">
+            <div class="info">
+                <h3>MegaLand</h3>
+                <div class="count">992 videos</div>
+                <small>Last updated: 2026-02-04 14:10:52</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#17</span>
+            <img src="https://cdn.discordapp.com/icons/1458977488838590582/a_8fa2447abad407258f16413fed552598.png" alt="icon">
+            <div class="info">
+                <h3>Goon Hut | NSFW</h3>
+                <div class="count">890 videos</div>
+                <small>Last updated: 2026-02-04 14:00:09</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#18</span>
+            <img src="https://cdn.discordapp.com/icons/1319150130393251840/5396b9b34bf90d863840eb34bc21cddd.png" alt="icon">
+            <div class="info">
+                <h3>Grez Store</h3>
+                <div class="count">293 videos</div>
+                <small>Last updated: 2026-02-04 14:21:04</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#19</span>
+            <img src="https://cdn.discordapp.com/icons/1436251857054863363/a_582fa394372ad65064d8c1cbcdceafc7.png" alt="icon">
+            <div class="info">
+                <h3>Deligit Store</h3>
+                <div class="count">222 videos</div>
+                <small>Last updated: 2026-02-04 14:30:05</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#20</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>o</h3>
+                <div class="count">123 videos</div>
+                <small>Last updated: 2026-02-04 15:01:00</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#21</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>github</h3>
+                <div class="count">90 videos</div>
+                <small>Last updated: 2026-02-04 15:26:24</small>
+            </div>
+        </div>
+
+        <div class="server">
+            <span class="rank">#22</span>
+            <img src="https://cdn.discordapp.com/embed/avatars/0.png" alt="icon">
+            <div class="info">
+                <h3>sadasd</h3>
+                <div class="count">23 videos</div>
+                <small>Last updated: 2026-02-04 13:51:07</small>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
